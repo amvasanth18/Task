@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto";
+  opacity: 0;
+  transition: 1s;
+}
+.bg-white {
+  background-color: #fafafa;
+}
+.w-50 {
+  width: 50%;
+}
+.h-full {
+  height: 100vh;
+}
+.color-black {
+  color: #000;
+}
+.color-gray-500 {
+  color: #a2a2a2;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.bottom-40 {
+  bottom: 40px;
+}
+.color-white {
+  color: #fff;
+}
+.pad-sm {
+  padding: 24px;
+}
+.mar-t-md {
+  margin-top: 32px;
+}
+.mar-t-sm {
+  margin-top: 24px;
+}
+.mar-t-xs {
+  margin-top: 16px;
+}
+.mar-t-xxs {
+  margin-top: 8px;
+}
+.pad-b-lg {
+  padding-bottom: 48px;
+}
+.type-32 {
+  font-size: 32px;
+}
+.type-24 {
+  font-size: 24px;
+}
+.type-20 {
+  font-size: 20px;
+}
+.font-medium {
+  font-weight: 500;
+}
+.letter-spacing-half {
+  letter-spacing: 0.5px;
+}
+.max-w-97 {
+  max-width: 97%;
+}
+.flex {
+  display: flex;
+}
+.w-100 {
+  width: 100%;
+}
+.w-90 {
+  width: 90%;
+}
+.flex-items-center {
+  align-items: center;
+}
+.type-40 {
+  font-size: 40px;
+}
+.pad-lg {
+  padding: 48px;
+}
+.pad-l-xxs {
+  padding-left: 8px;
+  padding-top: 2px;
+}
+.login-pad{
+  padding-bottom: 2px;
+  padding-left: 3px;
+}
+.block {
+  display: block;
+}
+.border-gray-100 {
+  border: 1px solid #dddddd;
+}
+.textbox {
+  height: 30px;
+  padding: 10px 30px;
+}
+.border-radius-50 {
+  border-radius: 50px;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.bg-white {
+  background-color: white;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.checkbox-round {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  appearance: none;
+  outline: none;
+}
+.checkbox-round:checked {
+  background-color: gray;
+}
+.image-w {
+  width: 18px;
+}
+.signin-w {
+  width: 340px;
+}
+.signin-p {
+  padding: 10px 96px;
+  transition: 0.3s;
+}
+.signin-p:hover {
+  background-color: #444444;
+  color: white;
+  border: none;
+}
+.signin-bg {
+  background-color: #000;
+  transition: 0.3s;
+}
+.signin-bg:hover {
+  background-color: #444444;
+  color: white;
+  border: none;
+}
+.account-t {
+  padding-top: 150px;
+}

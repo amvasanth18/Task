@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Page Found</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <style>
+        body {
+            scroll-behavior: smooth;
+            opacity: 0;
+            transition: 2s;
+        }
+        .border-radius-50 {
+            border-radius: 50px;
+        }
+        .signin-w {
+            width: 340px;
+        }
+        .signin-p {
+            padding: 10px 96px;
+            transition: 0.2s;
+        }
+        .signin-p:hover {
+            opacity: 0.8;
+        }
+        .signin-bg{
+            background-color: #373737;
+        }
+        .color-white {
+            color: #fff;
+        }
+        .border-none {
+            border: none;
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        body {
+            font-family: 'Roboto';
+        }
+        .flex-direction-column {
+            flex-direction: column;
+        }
+    </style>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+  
+    <div class="flex-direction-column"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;"
+    >
+      <h1 style="color: #637081; padding-bottom: 16px">
+        Uh-Oh! Something went wrong. Please go back to the homepage.
+      </h1>
+      <button class="border-radius-50 signin-p signin-w color-white signin-bg cursor-pointer border-none" onclick="location.href='ProductList.html';">
+        <b>Go back to home</b>
+      </button>
+    </div>
+    </div>
+  </body>
+</html>

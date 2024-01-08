@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+  </head>
+
+  <body class="bg-white" onload="document.body.style.opacity='1'">
+    <section class="flex flex-items-center">
+      <!-- Image Container -->
+      <div id="image-container" class="w-50">
+        <div class="relative" id="image-block ">
+          <img
+            src="./Images/loginSideImg.jpg"
+            alt="Login Image"
+            class="w-100 h-full"
+          />
+
+          <div
+            id="text-block"
+            class="absolute max-w-97 bottom-40 color-white pad-sm"
+          >
+            <p class="type-32 font-medium letter-spacing-half">
+              Benefit from competitive prices and a seamless shopping
+              experience, the transforming your home with ease.
+            </p>
+
+            <p class="mar-t-sm font-medium type-24">Alexander Alex</p>
+            <p class="mar-t-xs">Founder Luxespace</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Container -->
+      <div id="form-container" class="w-50 pad-lg">
+        <p class="color-black type-40">Hello, Welcome Back</p>
+        <p class="color-gray-500 mar-t-xs pad-b-lg">
+          Complete the data below to enjoy our services
+        </p>
+
+        <div id="email-section" class="mar-t-sm">
+          <label for="email" class="type-20">Email or Username</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email or Username"
+            class="mar-t-xxs w-90 textbox block border-radius-50 border-gray-100"
+          />
+        </div>
+        <div id="password-section" class="mar-t-sm">
+          <label for="password" class="type-20">Password</label>
+          <input
+            type="text"
+            id="password"
+            placeholder="Enter your email or Username"
+            class="mar-t-xxs w-90 textbox block border-radius-50 border-gray-100"
+          />
+        </div>
+
+        <div class="flex flex-items-center justify-between mar-t-md">
+          <div id="rememberme" class="color-gray-500 flex flex-items-center">
+            <input
+              type="checkbox"
+              id="remember-me"
+              name="remember-me"
+              value="rememberMe"
+              class="checkbox-round border-radius-50 bg-white cursor-pointer border-gray-100"
+            />
+            <label for="remember-me" class="pad-l-xxs">Remember me</label>
+          </div>
+          <div id="forgot-password">
+            <a href="#" id="forgot-password" class="color-black"
+              >Forgot password</a
+            >
+          </div>
+        </div>
+
+        <!-- Button divs -->
+        <div class="flex justify-between mar-t-md">
+          <div>
+            <button
+              class="border-radius-50 signin-p signin-w color-white signin-bg cursor-pointer"
+              onclick="location.href='ProductList.html';"
+            >
+              Sign In
+            </button>
+          </div>
+          <div>
+            <button
+              class="flex border-radius-50 signin-w signin-p bg-white cursor-pointer"
+              onclick="location.href='ProductList.html';"
+            >
+              <img src="./Images/google.png" class="image-w" />
+              <p class="pad-l-xxs">Sign In With Google</p>
+            </button>
+          </div>
+        </div>
+        <div class="flex account-t">
+          <p class="color-gray-500">Don't have account?</p>
+          <span class="login-pad cursor-pointer">Login</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

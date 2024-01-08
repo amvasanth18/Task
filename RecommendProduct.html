@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected and Recommend Product</title>
+    <link rel="stylesheet" href="RecommendProduct.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+  </head>
+  <body class="body" onload="document.body.style.opacity='1'">
+    <section>
+      <div class="flex items-center header-r header-s">
+        <a href="ProductList.html" style="color: inherit">
+          <div class="flex flex-relative">
+            <i class="fa-brands fa-slack"></i>
+            <p class="Luxespace-w Luxespace-f">Luxespace</p>
+          </div>
+        </a>
+        <div>
+          <ul class="flex ul-li li-l text-c">
+            <a href="ProductList.html"><li class="li-s text-b">Home</li></a>
+            <a href="./404.html"><li class="li-s text-c">About</li></a>
+            <a href="./ProductList.html"
+              ><li class="li-s text-c">Product</li></a
+            >
+            <a href="./404.html"><li class="li-s text-c">Collection</li></a>
+            <a href="./404.html"><li class="li-s text-c">Contact</li></a>
+          </ul>
+        </div>
+        <div class="flex items-center search-margin">
+          <img class="search-w search-m" src="./Images/search.png" alt="" />
+          <img class="search-w search-m" src="./Images/shop.png" alt="" />
+          <a href="login.html" style="color: inherit"
+            ><p class="search-m login-padd loginfont">Login</p></a
+          >
+        </div>
+      </div>
+      <div class="flex Product">
+        <div class="Recommend-product">
+          <img class="bg-gradient cursor-pointer" src="./Images/image-5.png" alt="" />
+        </div>
+        <div class="category">
+          <button class="CategorySofa cursor-pointer">Category Sofa</button>
+          <p class="Name">Axis 2-Seat Sofa</p>
+          <p>
+            <i
+              class="fa-solid fa-star"
+              style="font-size: 20px; margin-right: 8px"
+            ></i
+            >(4.9) 9.2K Reviews
+          </p>
+          <div class="flex dollar-margin">
+            <p class="dollar">$800</p>
+            <span class="dollar-left dollar-fontsize"
+              ><i class="fa-solid fa-dollar-sign">652</i></span
+            >
+          </div>
+          <p class="Description">Description</p>
+          <p class="Description-data">
+            Bring Axis home and watch life revolve around it.This 2-seat sofa
+            offers exceptional durability for family room and casual living
+            rooms, featuring track arms that <span>Read more...</span>
+          </p>
+          <p class="colors">3 Colors Available</p>
+          <div class="flex circle-margin">
+            <div>
+              <span class="circle1 cursor-pointer"></span>
+              <span class="circle2 cursor-pointer"></span>
+              <span class="circle3 cursor-pointer"></span>
+            </div>
+            <p class="Grey-Soft">Grey Soft</p>
+          </div>
+          <div class="button-container">
+            <button class="button1-padd cursor-pointer">Buy Now</button>
+            <button class="button2-padd cursor-pointer">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
