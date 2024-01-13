@@ -8,6 +8,7 @@ body {
   margin: 15px 50px;
   opacity: 0;
   transition: 1s;
+  background-color: #FAFAFA;
 }
 .flex {
   display: flex;

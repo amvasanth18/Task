@@ -10,116 +10,256 @@
     />
     <link rel="stylesheet" href="ProductList.css" />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
   </head>
-  <body class="body" onload="document.body.style.opacity='1'">
-    <section>
-      <div class="flex items-center header-r header-s">
-        <div class="flex flex-relative">
-          <i class="fa-brands fa-slack"></i>
-          <p class="Luxespace-a Luxespace-w Luxespace-f cursor-pointer">Luxespace</p>
-        </div>
+  <body class="body page-outline" onload="document.body.style.opacity='1'">
+    <!-- Header section -->
+    <header class="flex flex-items-center justify-between">
+      <!-- Icon section -->
+      <div class="flex flex-items-center" id="icon-container">
         <div>
-          <ul class="flex ul-li li-l text-c">
-            <a href="ProductList.html"><li class="li-s text-b">Home</li></a>
-            <a href="./404.html"><li class="li-s text-c">About</li></a>
-            <a href="./ProductList.html"><li class="li-s text-c">Product</li></a>
-            <a href="./404.html"><li class="li-s text-c">Collection</li></a>
-            <a href="./404.html"><li class="li-s text-c">Contact</li></a>
-          </ul>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-md"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+            />
+          </svg>
         </div>
-        <div class="flex items-center search-margin">
-          <img class="search-w search-m cursor-pointer" src="./Images/search.png" alt="" />
-          <img class="search-w search-m cursor-pointer" src="./Images/shop.png" alt="" />
-          <a href="login.html" style="color: inherit"><p class="search-m login-padd loginfont">Login</p></a>
-        </div>
+        <h2 class="cursor-pointer pad-l-xxs">Luxespace</h2>
       </div>
-      <div class="main-section">
-        <div class="Product-align">
-          <p class="product-l product-f">Our Product List</p>
-          <p class="product-w text-c ">
-            We provide selling or buying quality and markable furniture and have
-            our own <br /><span class="span-margin">aesthetic in our furniture</span>
-          </p>
-        </div>
-        <div class="button-align">
-          <button class="sofa-btn button-p button-m button-bg cursor-pointer">Sofa</button>
-          <button class="chair-btn button-p button-m cursor-pointer">Chair</button>
-          <button class="table-btn button-p button-m cursor-pointer">Table</button>
-          <button class="lamp-btn button-p button-m cursor-pointer">Lamp</button>
-          <button class="acc-btn button-a button-m cursor-pointer">Accessoris</button>
-        </div>
+      <!-- Menu Section -->
+      <div class="display-none" id="menu-container">
+        <ul class="flex flex-items-center ul-li">
+          <a href="ProductList.html"><li class="li-s text-b">Home</li></a>
+          <a href="./404.html"><li class="li-s text-gray-400">About</li></a>
+          <a href="./ProductList.html"
+            ><li class="li-s text-gray-400">Product</li></a
+          >
+          <a href="./404.html"
+            ><li class="li-s text-gray-400">Collection</li></a
+          >
+          <a href="./404.html"><li class="li-s text-gray-400">Contact</li></a>
+        </ul>
       </div>
-      <div class="image-container cursor-pointer">
-        <a href="./RecommendProduct.html" style="color: inherit;">
-        <div class="image1">
-          <img class="img1-p" src="./Images/image-1.jpg" alt="" />
-          <p class="Namefont">Avondale Wood Leg ...</p>
-          <div class="flex">
-            <p class="dollar-c dollar-f">$250</p>
-            <span class="Price-margin"><i class="fa-solid fa-dollar-sign">180</i></span>
-            <div class="circle circle-l">
-              <span class="dot dot-b left-30"></span>
-              <span class="dot dot-h left-20"></span>
-              <span class="dot dot-k left-10"></span>
-              <span class="dot dot-l left-0"></span>
-            </div>
-          </div>
+      <!-- Login and Cart Section -->
+      <div class="flex flex-items-center" id="login-cart-icon-section">
+        <div class="pad-r-xs" id="search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-sm"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
         </div>
-      </a>
-      <a href="./RecommendProduct.html" style="color: inherit;">
-        <div class="image2  ">
-          <img class="img2-p bg-gradient" src="./Images/image-2.png" alt="" />
-          <p class="Namefont">Petrie Apartment ...</p>
-          <div class="flex">
-            <p class="dollar-c dollar-f">$210</p>
-            <span class="Price-margin"><i class="fa-solid fa-dollar-sign">195</i></span>
-            <div class="circle circle-l">
-              <span class="dot dot-b left-40"></span>
-              <span class="dot dot-h left-30"></span>
-              <span class="dot dot-k left-20"></span>
-              <span class="dot dot-p left-10"></span>
-              <span class="dot dot-l left-0"></span>
-            </div>
-          </div>
-        </div>
-      </a>
-        <a href="./RecommendProduct.html" style="color: inherit;">
-        <div class="image3">
-          <img class="img3-p bg-gradient" src="./Images/image-3.png" alt="" onclick=""/>
-          <p class="Namefont">Gather Deep Sofa ...</p>
-          <div class="flex">
-            <p class="dollar-c dollar-f">$195</p>
-            <span class="Price-margin"><i class="fa-solid fa-dollar-sign">170</i></span>
-            <div class="circle circle-l">
-              <span class="dot dot-b left-30"></span>
-              <span class="dot dot-h left-20"></span>
-              <span class="dot dot-k left-10"></span>
-              <span class="dot dot-l left-0"></span>
-            </div>
-          </div>
-        </div>
-      </a>
-        <a href="./RecommendProduct.html" style="color: inherit;">
-        <div class="image4">
-          <img class="img4-p bg-gradient" src="Images/image-4.png" alt="" />
-          <p class="Namefont">Ruso Leather Reclining ...</p>
-          <div class="flex">
-            <p class="dollar-c dollar-f">$195</p>
-            <span class="Price-margin"><i class="fa-solid fa-dollar-sign">170</i></span>
-            <div class="circle circle-l">
-              <span class="dot dot-b left-40"></span>
-              <span class="dot dot-h left-30"></span>
-              <span class="dot dot-k left-20"></span>
-              <span class="dot dot-h left-10"></span>
-              <span class="dot dot-k left-0"></span>
-            </div>
-          </div>
-      </div>
-    </a>
-    </section>
 
+        <div class="pad-r-xs display-none" id="bag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-sm"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+        </div>
+        <div class="border-left display-none" id="Login">
+          <p class="pad-l-xs">Login</p>
+        </div>
+      </div>
+    </header>
+    <section class="grid justify-center" id="main">
+      <!-- Product heading -->
+      <div class="text-center pad-xs" id="heading-container">
+        <p class="text-2xl text-lg pad-t-xl pad-t-sm-md pad-t-xs-sm">
+          Our Product List
+        </p>
+        <p class="text-gray-400 pad-t-sm pad-t-xxs-md">
+          We provide selling or buying quality and markable furniture and have
+          our own <br class="display-none" />aesthetic in our furniture
+        </p>
+      </div>
+      <!-- Buttons -->
+      <div
+        class="grid grid-col-5 grid-col-3-md grid-col-2-sm gap-8 pad-t-sm pad-t-xs-md pad-t-xxs-md"
+        id="btn-container"
+      >
+        <button
+          type="button"
+          class="button-bg radius-lg btn-transition cursor-pointer border-gray-400 pad-t-xs pad-b-xs"
+        >
+          Sofa
+        </button>
+        <button
+          type="button"
+          class="bg-white radius-lg btn-transition cursor-pointer border-gray-400 pad-t-xs pad-b-xs"
+        >
+          Chair
+        </button>
+        <button
+          type="button"
+          class="bg-white radius-lg btn-transition cursor-pointer border-gray-400 pad-t-xs pad-b-xs"
+        >
+          Table
+        </button>
+        <button
+          type="button"
+          class="bg-white radius-lg btn-transition cursor-pointer border-gray-400 pad-t-xs pad-b-xs"
+        >
+          Lamp
+        </button>
+        <button
+          type="button"
+          class="bg-white radius-lg btn-transition cursor-pointer border-gray-400 pad-t-xs pad-b-xs"
+        >
+          Accessories
+        </button>
+      </div>
+    </section>
+    <!-- Product Listing -->
+
+    <div id="product-list-container" class="pad-t-lg pad-t-md-md">
+      <div class="box-container">
+        <div class="box bg-gradient cursor-pointer">
+          <a href="./RecommendProduct.html" style="color: inherit">
+            <img src="Images/image-1.png" alt="" />
+            <div
+              class="pad-t-xs absolute z-2 bottom-0 w-95"
+              id="product-info-section "
+            >
+              <div class="pad-sm" id="product-details-section">
+                <p class="align-start text-20">Avondale Wood Leg</p>
+                <div class="flex justify-between flex-items-center pad-t-xs">
+                  <div class="">
+                    <p class="text-gray-400 strike inline-block">$250</p>
+                    <span class=""
+                      ><i class="fa-solid fa-dollar-sign">180</i></span
+                    >
+                  </div>
+
+                  <div class="" id="product-color-selection-section">
+                    <span class="dot dot-b left-30"></span>
+                    <span class="dot dot-h left-20"></span>
+                    <span class="dot dot-k left-10"></span>
+                    <span class="dot dot-l left-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box bg-gradient cursor-pointer">
+          <a href="./RecommendProduct.html" style="color: inherit">
+            <img src="Images/image-2.png" alt="" />
+            <div
+              class="pad-t-xs absolute z-2 bottom-0 w-95"
+              id="product-info-section "
+            >
+              <div class="pad-sm" id="product-details-section">
+                <p class="align-start text-20">Petrie Apartment</p>
+                <div class="flex justify-between flex-items-center pad-t-xs">
+                  <div class="">
+                    <p class="text-gray-400 strike inline-block">$210</p>
+                    <span class=""
+                      ><i class="fa-solid fa-dollar-sign">195</i></span
+                    >
+                  </div>
+
+                  <div class="" id="product-color-selection-section">
+                    <span class="dot dot-b left-40"></span>
+                    <span class="dot dot-h left-30"></span>
+                    <span class="dot dot-k left-20"></span>
+                    <span class="dot dot-p left-10"></span>
+                    <span class="dot dot-l left-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box bg-gradient cursor-pointer">
+          <a href="./RecommendProduct.html" style="color: inherit">
+            <img src="Images/image-3.png" alt="" />
+            <div
+              class="pad-t-xs absolute z-2 bottom-0 w-95"
+              id="product-info-section "
+            >
+              <div class="pad-sm" id="product-details-section">
+                <p class="align-start text-20">Gather Deep Sofa</p>
+                <div class="flex justify-between flex-items-center pad-t-xs">
+                  <div class="">
+                    <p class="text-gray-400 strike inline-block">$250</p>
+                    <span class=""
+                      ><i class="fa-solid fa-dollar-sign">180</i></span
+                    >
+                  </div>
+
+                  <div class="" id="product-color-selection-section">
+                    <span class="dot dot-b left-30"></span>
+                    <span class="dot dot-h left-20"></span>
+                    <span class="dot dot-k left-10"></span>
+                    <span class="dot dot-l left-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box bg-gradient cursor-pointer">
+          <a href="./RecommendProduct.html" style="color: inherit">
+            <img src="Images/image-4.png" alt="" />
+            <div
+              class="pad-t-xs absolute z-2 bottom-0 w-95"
+              id="product-info-section "
+            >
+              <div class="pad-sm" id="product-details-section">
+                <p class="align-start text-20">Ruso Leather Reclining</p>
+                <div class="flex justify-between flex-items-center pad-t-xs">
+                  <div class="">
+                    <p class="text-gray-400 strike inline-block">$250</p>
+                    <span class=""
+                      ><i class="fa-solid fa-dollar-sign">180</i></span
+                    >
+                  </div>
+
+                  <div class="" id="product-color-selection-section">
+                    <span class="dot dot-b left-30"></span>
+                    <span class="dot dot-h left-20"></span>
+                    <span class="dot dot-k left-10"></span>
+                    <span class="dot dot-l left-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
